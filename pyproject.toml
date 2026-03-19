@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tcr-bcr-diversity"
+version = "0.2.0"
+description = "TCR/BCR receptor repertoire diversity analysis toolkit"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "matplotlib>=3.7",
+  "scipy>=1.10",
+]
+
+[tool.setuptools]
+py-modules = [
+  "analyse",
+  "data_loader",
+  "diversity_metrics",
+  "paired_chains",
+  "plots",
+  "stats_compare",
+  "report",
+  "generate_demo",
+]
